@@ -1,0 +1,44 @@
+@use "mixin";
+
+// Border radius
+$round-border: 50%;
+$border-radius-normal: 25px;
+
+.round-border{
+  border-radius: $round-border;
+}
+.border-radius-normal{
+  border-radius: $border-radius-normal !important;
+}
+
+.container{
+  @include mixin.mediaResponsive(xxxxl) {
+    max-width: 1440px;
+  }
+}
+
+.absolute-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-spacer{
+  padding: 60px 0;
+  @include mixin.mediaResponsive(lg) {
+    padding: 45px 0;
+  }
+  @include mixin.mediaResponsive(sm) {
+    padding: 30px 0;
+  }
+  &-mini{
+    padding: 30px 0;
+    @include mixin.mediaResponsive(lg) {
+      padding: 20px 0;
+    }
+    @include mixin.mediaResponsive(md) {
+      padding: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+// body {
+//   margin: 0;
+//   padding: 0;
+//   transition: 0.3s linear;
+// }
+
+#container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  perspective: 1000px;
+}
+
+#cont_mnu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  padding: 10px;
+}
+
+.ul_mnu {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  padding: 10px;
+  margin: 50px 0 0 0;
+  list-style-type: none;
+  cursor: pointer;
+  text-align: center;
+
+  li {
+    top: 10%;
+    padding: 5px;
+    font-family: 'cabin', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #445566;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      transition: 0.3s linear;
+
+      i {
+        visibility: hidden;
+        transition: 0.1s linear;
+      }
+
+      &:hover {
+        // Uncomment below line if you want to change link color on hover
+        // color: whitesmoke;
+
+        i {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+#btn_two {
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+#rol {
+  height: 100%;
+  width: 100%;
+  float: left;
+  background: radial-gradient(ellipse at center, #be3d12, #9f2c12, #881d13);
+  transform: rotatey(0deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s linear;
+}
+
+#btn_mnu {
+  position: fixed;
+  padding: 5px;
+  color: #fcfcfc;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  right: 25px;
+  font-family: 'tron';
+  color: #fff;
+  font-size: 18px;
+}
+
+.headline {
+  h1 {
+    font-family: 'cabin';
+    color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    font-family: 'cabin';
+    color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+  }
+
+  .allan {
+    font-family: 'Lobster';
+  }
+}
+
+@font-face {
+  font-family: 'tron';
+  src: url(Tr2n.ttf);
+}
